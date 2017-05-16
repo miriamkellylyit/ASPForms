@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="29ea419ab4e64504b952c653c740eed8" Name="Diagram1">
+        <EntityTypeShape EntityType="LIBRARYModel.AUTHOR" Width="1.5" PointX="8.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.BOOK" Width="1.5" PointX="10.5" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.BOOKCONDITION" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.BUYTRANSACTION" Width="1.5" PointX="12.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.CLASSIFICATION" Width="1.5" PointX="7.5" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.CONFERENCEPROCEEDING" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.DVD" Width="1.5" PointX="7.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.ITEM" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.ITEMDETAIL" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.JOURNAL" Width="1.5" PointX="7.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.LENDTRANSACTION" Width="1.5" PointX="7.5" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.LIBRARY" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.MEMBERHISTORY" Width="1.5" PointX="12" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.PUBLISHER" Width="1.5" PointX="8.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.RESERVATION" Width="1.5" PointX="7.5" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.SUBDIVISION" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.SUBJECT" Width="1.5" PointX="0.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LIBRARYModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="LIBRARYModel.FK_BOOK_AUTHOR" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_BOOK_BOOKCONDITION" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_BOOK_ITEMDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_BOOK_PUBLISHER" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_BUYTRANSACTION_BOOK" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_CONFERENCEPROCEEDINGS_ITEMDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_DVD_ITEMDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_ITEM_LIBRARY" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_ITEMDETAIL_ITEM" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_ITEMDETAIL_SUBDIVISION" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_JOURNAL_ITEMDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_LENDTRANSACTION_ITEMDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_RESERVATIONS_ITEMDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="LIBRARYModel.FK_SUBDIVISION_SUBJECT" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LIBRARYModel.EMPLOYEE" Width="1.5" PointX="3" PointY="9.25" />
+        <EntityTypeShape EntityType="LIBRARYModel.MEMBER" Width="1.5" PointX="9.75" PointY="19.75" />
+        <AssociationConnector Association="LIBRARYModel.FK_MEMBER_CLASSIFICATION" />
+        <AssociationConnector Association="LIBRARYModel.FK_EMPLOYEE_LIBRARY" />
+        <AssociationConnector Association="LIBRARYModel.FK_MEMBER_LIBRARY" />
+        <AssociationConnector Association="LIBRARYModel.FK_MEMBERHISTORY_MEMBER" />
+        <AssociationConnector Association="LIBRARYModel.MEMBERLENDTRANSACTION" />
+        <EntityTypeShape EntityType="LIBRARYModel.USER" Width="1.5" PointX="3.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

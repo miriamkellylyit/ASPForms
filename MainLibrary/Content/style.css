@@ -1,0 +1,30 @@
+﻿/* Style Sheet created by Miriam Kelly */
+
+/* Display image */
+.jumbotron {
+    background-image:url('../image/LOGO.jpg');
+    color:white;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Make image display across the screen */
+.lead1{
+
+    min-width: 80%;
+    font-size: 12px;
+        background-size: cover;
+    background-position: center center;
+
+}
+
+/* Change color of buttons */
+.btn-mk {
+style="background-color: lawngreen; color: darkgreen"
+}
+
+.btn-default {
+    color: darkgreen;
+    background-color: lawngreen;
+    border-color: #cccccc;
+}
